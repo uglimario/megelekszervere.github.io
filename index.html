@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Megelek Szervere</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Megelek szervere/style/stylesheet.css">
+    </head>
+    <body>
+        <section id="banner">
+            <img src="../Megelek szervere/images/logo.png" class="logo">
+            <div class="banner-text">
+                <h1>Üdvözlünk!</h1>
+                <p>Egy érdekes közösség...</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>nemtommeg</a>
+                    <a href="#"><span></span>Tudj többet</a>
+                </div>
+            </div>
+        </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>        
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="../Megelek szervere/images/menu icon white.png" id="menu">
+    </div>
+
+    <!--Features-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+    </section>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        var originalImageSrc = menu.src;  // Elmentjük az eredeti kép elérési útját
+        
+        sideNav.style.right = "-250px";
+
+        menubtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "../Megelek szervere/images/x blac.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "../Megelek szervere/images/menu icon white.png"
+            }
+
+           
+ //           if (menu.src === originalImageSrc) {
+                // Ha az eredeti kép van jelen, cseréljük le
+  //              menu.src = "../Megelek szervere/images/menu icon jo.png";  // Írd át az "új_kép_elérési_útja.jpg"-t a kívánt kép elérési útjára
+  //          } else {
+                // Ha már a második kép van jelen, állítsuk vissza az eredetit
+   //             menu.src = originalImageSrc;
+   //         }
+        }
+    </script>
+
+    </body>
+</html>
