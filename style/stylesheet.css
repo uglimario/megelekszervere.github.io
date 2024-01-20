@@ -231,13 +231,18 @@ nav ul li a{
     margin-bottom: 10px;
     font-weight: 100;
     color: #696969;
-}*/
+    font-size: 30px;
+}
+
+.actual-text{
+    font-size: 19px;
+}
 
 .actual-desc{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    font-size: 122px;
+    font-size: 12px;
 }
 
 .actual-text p{
@@ -257,6 +262,12 @@ nav ul li a{
     }
     .actual-img img{
         width: 100%;
+    }
+    .features h1{
+        font-size: 18px;
+    }
+    .actual-text{
+        font-size: 12px;
     }
 }
 
@@ -358,5 +369,193 @@ hr{
     }
     .single-service:hover .service-desc{
         bottom: 32% !important;
+    }
+}
+
+/*--Helpers--*/
+
+#helpers{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.helpers-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.helpers-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px 3px #00000014;
+    cursor: pointer;
+    bottom: -50px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+/*.helpers-col p{
+    font-size: 14px;
+}*/
+
+.helpers-col img{
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.helpers-col:hover{
+    transform: translateY(-7px);
+    /*font-weight: bolder;*/
+}
+/*
+.helpers-col:hover h3{
+    font-weight: bolder;
+}
+
+.helpers-col h3{
+    transition: 1s;
+}*/
+
+.helpers-col:hover .mod-desc{
+    bottom: 32%;
+    opacity: 1;
+}
+
+.helpers-col:hover img{
+    opacity: 0.5;
+    filter: invert(20%);
+}
+
+.mod-desc{
+    width: auto;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(0%);
+    font-size: 14px;
+    transition: 1s;
+    color: #000000;
+    transition: all 0.8s;
+    position: absolute;
+    margin: 8px;
+    display: block;
+    order: -1;
+}
+
+
+.helpers-col:hover .mod-desc{
+    opacity: 1;
+    transform: translateY(20%);
+}
+
+/*.mod-desc p{
+    justify-content: ;
+}*/
+
+.helpers-col hr{
+    background: #000000;
+    height: 2px;
+    border: 0;
+    margin: 8px auto;
+    width: 60%;
+}
+
+@media screen and (max-width: 770px){
+    .helpers-col{
+        flex-basis: 100%;
+    }
+    .mod-desc{
+        margin: 15px;
+    }
+}
+
+/*--footer--*/
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-right{
+    text-align: right;
+}
+
+.footer-row h1{
+    margin: 10px 0;
+}
+
+.footer-row p{
+    line-height: 35px;
+}
+
+.footer-img{
+    max-width: 500px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+transform: translate(-50%,-10%);
+}
+
+.social-links{
+    text-align: center;
+}
+
+.social-links img{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    /*border: 1px solid #555555;*/
+    margin: 40px 5px 0;
+    /*color: #555555;*/
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.social-links img:hover{
+    /*background: #555555;
+    color: #fff;*/
+    filter: invert(90%);
+    transform: translateY(-7px);
+}
+
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 770px){
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top:23%;
     }
 }

@@ -3,27 +3,31 @@
         <title>Megelek Szervere</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/stylesheet.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     </head>
     <body>
         <section id="banner">
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" id="discord3">
             <div class="banner-text">
                 <h1>Üdvözlünk!</h1>
                 <p>Egy érdekes közösség...</p>
                 <div class="banner-btn">
-                    <a href="#"><span></span>Csatlakozás!</a>
-                    <a href="#"><span></span>Tudj többet</a>
+                    <i id="discord"><a href="#"><span></span>Csatlakozás!</a></i>
+                    <i id="more"><a href="#"><span></span>Tudj többet</a></i>
                 </div>
             </div>
         </section>
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">FŐOLDAL</a></li>
-                <li><a href="#">INFORMÁCIÓK</a></li>
-                <li><a href="#">KÖZÖSSÉG</a></li>
-                <li><a href="#">SEGÍTŐK</a></li>
-                <li><a href="#">EGYEBEK</a></li>        
+                <li><a href="#banner">FŐOLDAL</a></li>
+                <li><a href="#feature">INFORMÁCIÓK</a></li>
+                <li><a href="#Service">KÖZÖSSÉG</a></li>
+                <li><a href="#helpers">SEGÍTŐK</a></li>
+                <li><a href="#footer">EGYEBEK</a></li>        
             </ul>
         </nav>
     </div>
@@ -78,7 +82,7 @@
                 <div class="service-desc">
                     <h3>Voice Channels</h3>
                     <hr>
-                    <p>Ezek nagyon prktikusak, 
+                    <p>Ezek nagyon praktikusak, 
                         mindenki tud magának csinálni, 
                         és ízlés szerint ügyködni a beállításaival.</p>
                 </div>
@@ -116,34 +120,86 @@
         </div>
     </section>
 
-    <script>
-        var menubtn = document.getElementById("menubtn")
-        var sideNav = document.getElementById("sideNav")
-        var menu = document.getElementById("menu")
-        var originalImageSrc = menu.src;  // Elmentjük az eredeti kép elérési útját
-        
-        sideNav.style.right = "-250px";
+    <!--Helpers-->
 
-        menubtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
-                sideNav.style.right = "0";
-                menu.src = "images/x blac.png";
-            }
-            else{
-                sideNav.style.right = "-250px";
-                menu.src = "images/menu icon white.png"
-            }
+    <section id="helpers">
+        <div class="title-text">
+            <p>SEGÍTŐK</p>
+            <h1>Moderátoraink</h1>
+        </div>
+        <div class="helpers-row">
+            <div class="helpers-col">
+                <!--<p>kakakakaka akakakaka ka akakaka akaakakaka kakaka akakakakakaka akakka </p>-->
+                <img src="images/profileb.png">
+                <div class="overlay"></div>
+                <div class="mod-desc">
+                    <h3>Bendyca</h3>
+                    <hr>
+                    <p>Bendi egy segítőkész, elég érdekes személyiség, 
+                        de ha megismered akkor jól tudod magad érezni vele.</p>
+                </div>
+            </div>
+            <div class="helpers-col">
+                <!--<p>kakakakaka akakakaka ka akakaka akaakakaka kakaka akakakakakaka akakka </p>-->
+                <img src="images/profiled.png">
+                <div class="overlay"></div>
+                <div class="mod-desc">
+                    <h3>Dani</h3>
+                    <hr>
+                    <p>Dani az egyik legmegbízhatóbb, önzetlenebb és 
+                        becsületesebb ember a szerveren, nagyon jó ha vele jóban vagy sokat segít, 
+                        de néha ő sem tudja hogy pontosan mi igaz vagy mi valós...</p>
+                </div>
+            </div>
+            <div class="helpers-col">
+                <!--<p>kakakakaka akakakaka ka akakaka akaakakaka kakaka akakakakakaka akakka </p>-->
+                <img src="images/profilem.png">
+                <div class="overlay"></div>
+                <div class="mod-desc">
+                    <h3>Markyca</h3>
+                    <hr>
+                    <p>Márk a szerver atyja és a funkciók, a kinézet, a frissítések és a moderálás az ő feladata. 
+                        Ezt a website-ot is ő csinálta. Discordon hozzá fordulj, ő a legaktívabb, segítőkészebb és sokat tudóbb.</p>
+                </div>
+            </div>
+        </div>
+    </section> 
 
-           
- //           if (menu.src === originalImageSrc) {
-                // Ha az eredeti kép van jelen, cseréljük le
-  //              menu.src = "images/menu icon jo.png";  // Írd át az "új_kép_elérési_útja.jpg"-t a kívánt kép elérési útjára
-  //          } else {
-                // Ha már a második kép van jelen, állítsuk vissza az eredetit
-   //             menu.src = originalImageSrc;
-   //         }
-        }
-    </script>
+<!--footer-->
+
+    <section id="footer">
+        <img src="images/M logo.png" class="footer-img">
+        <div class="title-text">
+        <p>EGYEBEK</p>
+        <h1>Lehet Érdemes Tudni</h1>
+        </div>
+    <div class="footer-row">
+    <div class="footer-left">
+        <h1>Nyereményjátékok</h1>
+        <p>Admin rang - általában csütörtökön ér véget</p>
+        <p>Shadowcoin - random, ha egy mod úgy dönt, droppol egyet</p>
+    </div>
+    <div class="footer-right">
+        <h1>Elérhetőségek</h1>
+        <p>megelekszervere@gmail.com</p>
+        <p>www.megelekszervere.hu</p>
+          
+          
+    </div>
+    </div>
+
+    <div class="social-links">
+        <img src="images/fb icon b.png" id="facebook">
+        <img src="images/tw icon b.png" id="twitter">
+        <img src="images/dc icon b.png" id="discord2">
+        <img src="images/spotify icon b 2.png" id="spotify">
+        <hr />   
+        <p>&copy; Copyright Megelek Szervere - Discord Server</p>
+    </div>
+
+    </section>
+
+    <script src="script/script.js"></script>
 
     </body>
 </html>
