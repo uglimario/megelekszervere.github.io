@@ -283,7 +283,7 @@ nav ul li a{
 #service{
     width: 100%;
     padding: 70px 0;
-    background: #efefef;
+    background: #dddddd;
 }
 
 .kozosseg-box{
@@ -377,6 +377,7 @@ hr{
 #helpers{
     width: 100%;
     padding: 70px 0;
+    margin-bottom: 40px;
 }
 
 .helpers-row{
@@ -393,7 +394,7 @@ hr{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 7px;
-    box-shadow: 0 10px 20px 3px #00000014;
+    box-shadow: 0 10px 20px 3px #0000007d;
     cursor: pointer;
     bottom: -50px;
     position: relative;
@@ -486,7 +487,7 @@ hr{
 
 #footer{
     padding: 100px 0 20px;
-    background: #efefef;
+    background: #dddddd;
     position: relative;
 
 }
