@@ -450,7 +450,7 @@ hr{
     color: #000000;
     transition: all 0.8s;
     position: absolute;
-    margin: 8px;
+    margin: auto;
     display: block;
     order: -1;
 }
