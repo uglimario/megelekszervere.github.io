@@ -447,7 +447,7 @@ hr{
     text-align: center;
     opacity: 0;
     transform: translateY(0%);
-    font-size: 12px;
+    font-size: 14px;
     color: #000000;
     transition: all 0.8s;
     position: absolute;
