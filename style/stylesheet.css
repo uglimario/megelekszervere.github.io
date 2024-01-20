@@ -559,3 +559,43 @@ transform: translate(-50%,-10%);
         top:23%;
     }
 }
+
+/*--Loading screen--*/
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 175, 175, 0.985);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 150px; /* Adjust the size of the spinner as needed */
+    height: 150px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main-content {
+    /* Additional styles for your main content */
+    display: none; /* Hide the main content initially */
+}
