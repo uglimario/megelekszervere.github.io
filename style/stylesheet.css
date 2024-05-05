@@ -506,10 +506,35 @@ hr{
     margin-bottom: 20px;
 }
 
+.footer-left p{
+    flex-basis: 45%;
+    text-align: left; /* Balra igazítás */
+    margin-left: 30px; /* Balra behúzás */
+}
+
+.footer-right p{
+    flex-basis: 45%;
+    text-align: right; /* Jobbra igazítás */
+    margin-right: 30px; /* Jobbra behúzás */
+}
+
+.footer-row h1{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.footer-row p{
+    line-height: 35px;
+}
+
 .footer-right{
     text-align: right;
 }
-
+/**
+.footer-right p{
+    text-align: right;
+}
+/**
 .footer-row h1{
     margin: 10px 0;
 }
@@ -517,6 +542,15 @@ hr{
 .footer-row p{
     line-height: 35px;
 }
+
+.footer-leftp p{
+    text-indent: 20px;
+}
+
+.footer-right p{
+    padding-left: 20px;
+}
+**/
 
 .footer-img{
     max-width: 500px;
